@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page of Website</title>
+    <link rel="icon" type="image/x-icon" href="images.jpeg">
+
+</head>
+<body bgcolor="green">
+    <header>
+        <section>
+            <div>
+                <nav>
+                    <a href="#aboutme">AboutMe</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <a href="#MySkills">Skills and Certifications</a> &nbsp; | &nbsp;
+                    <a href="#aboutyou">AboutYourself</a> &nbsp; | &nbsp;
+                 </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+       <div>
+            <marquee><h1 id="aboutme">This is about myself!</h1></marquee>
+            <strong>Surjay Soni</strong><br>
+            <label><u><strong>Profile</strong></u><br>An optimistic and hard-working personality, who is always keen to learn
+                new things and curious to explore new ideas, thoughts in different fields.
+                In my first year of college, I am in pursuit of developing my extra-curricular
+                skills and also enhance my verbal and mass communication skills.</label><br><br>
+            <label><u><strong>Education</strong></u><br>
+                <ul>
+                    <li>Passed CBSE Class 10th All India Secondary School Examination
+                        (AISSE) with 96.6% and third position in St. Joseph’s Co-Ed
+                        School, Bhopal.</li>
+                    <li>Passed CBSE Class 12th All India Senior School Certificate
+                        Examination (AISSCE) in PCM stream with 95.2% and fourth
+                        position in Gyan Ganga International Academy, Bhopal.</li>
+                    <li>
+                        Currently pursuing B. Tech at MANIT, Bhopal in Computer
+                        Science and Engineering.
+                    </li>
+                </ul>
+            </label>
+            <label><u><strong>Contact Details</strong></u><br>
+                <img src="phone.jpeg" height="15">8982206104<br>
+                <img src="mail.jpeg" height="15">surjay124@gmail.com<br>
+                <img src="home.png" height="16">H.No. 48 Shree
+                Ramsharnam Society,
+                Bawadiya Kalan, Bhopal-462039<br>
+                <img src="linkedinblack.png" height="15"> https://www.linkedin.com/in/surjay-soni-9b9a8626a/
+            </label>
+       </div>
+        <h2 id="MySkills">Skills and Certifications</h2>
+        <div>
+            <u><strong>Skills</strong></u>
+            <ul>
+                <li>
+                    Coding Languages-Core Java (SE-18), Python, HTML, CSS,
+JavaScript, SQL, C-Programming and Django.
+                </li>
+                <li>
+                    Completed All 11 Levels (4 Foundation, 4 Advanced and 3 Grand
+Master) of Abacus which made me pro in calculations.
+                </li>
+                <li>
+                    Can speak and understand a bit of French.
+                </li>
+            </ul>
+            <u><strong>Interests</strong></u>
+            <ul>
+                <li>Playing and watching Cricket, Chess, Football.</li>
+                <li>Current Affairs, News.</li>
+                <li>Going for an outing with friends.</li>
+            </ul>
+            <u><strong>Certifications</strong></u>
+            <ul>
+                <li>3 Times Champion at State Level in Abacus Prodigy (Level 4 in
+                    2016, Level 8 in 2017 and Level Grand Master C in 2019)
+                </li>
+                <li>Bagged 1st Runner-up position in 2018 and 3rd Runner-up position
+                    twice in 2016 and 2017 in National Level Abacus Prodigy
+                </li>
+                <li>
+                    Secured 3rd Rank in International Maths Olympiad in Class 10th at
+                    school level
+                </li>
+                <li>
+                    Secured 3rd Rank in SilverZone Maths Olympiad in Class 10th at
+                    school level.
+                </li>
+                <li>
+                    Secured 2nd Rank in SilverZone Science Olympiad in Class 10th at
+                    school level.
+                </li>
+                <li>
+                    Secured 1st Rank in SilverZone Social Studies Olympiad in Class 10th at school level
+                </li>
+                <li>
+                    Secured 1st Rank in International English Olympiad in Class 12th at school level
+                </li>
+                <li>
+                    Secured 8thRank in International Maths Olympiad in Class 12th at Zonal level
+                </li>
+            </ul>
+        </div>
+        <h3 id="aboutyou">Contact Form</h3>
+        <form action="#">
+                    {% csrf_token %}
+        <fieldset>
+            <legend>RegistrationForm</legend>
+                <table width="80%" bgcolor="lightgrey">
+                    <tr>
+                        <td align="right">First Name</td>
+                        <td><input type="text" name="fname" size="30"></td>
+
+                        <td align="right">Middle Name</td>
+                        <td><input type="text" name="mname" size="30"></td>
+
+                        <td align="right">Last Name</td>
+                        <td><input type="text" name="lname" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Age</td>
+                        <td><input type="number" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Gender</td>
+                        <td><input type="radio" name="myGender">Male
+                        <input type="radio" name="myGender">Female</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Contact number</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Email-Address</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Add Record"></td>
+                    </tr>
+            </table>
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>
